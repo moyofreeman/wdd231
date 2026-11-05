@@ -24,33 +24,37 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalise.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
 
-    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/script.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
     <!-- header -->
     <header>
-        <div id="sitename">
-            <img src="images/logo.svg" alt="site name">
-            <p>Site Name</p>
-        </div>
-        <nav id="navigationbar">
+        <!-- <div id="sitename"> -->
+        <img src="images/logo.svg" alt="site logo"  width="24" height="24">
+        <span id="sitename">Freeman Moyo</span>
+        <!-- </div> -->
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>  
+        
+              
+        
+        <!-- id for javascript and class for css --> 
+        <!-- <nav id="navigationbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="">Chamber Project</a></li>
                 <li><a href="">Final Project</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
-
-
-
+    
     <!-- body -->
     <!-- the body to have 5 main rows, then row 4 to be split into 2 -->
     <!-- also tow have 2 columns -->
@@ -72,7 +76,7 @@
                     favorite football is Highlander FC <em>Amahlolanyama, iTshilamoya.</em></p>
                 <p>Manama - located in Gwanda - is a hot dry region in the southern part of Zimbabwe, next to Botswana
                     and South African borders. TIt is inhabited by kind, warm hearted people, with Sotho being the main
-                    language. However, people used to speak Jahunda, hence Gwanda is usually refered to as
+                    language. However, people used to speak Jahunda, hence Gwanda is usually referred to as
                     <em>"esiJahundeni"</em>. The main agricultural activity in Gwanda is animal rearing.
                 </p>
             </section>
@@ -83,44 +87,36 @@
         </div>
 
         <section class="bodyrows" id="courses">
-            <h2>Web Certificate Courses</h2>
-            <nav id="coursenavigation">
-                <ul id="listofmajorcourses">
-                    <li><a href="" class="coursemajor">All</a></li>
-                    <li><a href="" class="coursemajor">CSE</a></li>
-                    <li><a href="" class="coursemajor">WDD</a></li>
-
-                </ul>
-                <ul id="listofmajorcourses">
-                    <li><a href="" class="specificcourse">WDD 130</a></li>
-                    <li><a href="" class="specificcourse">WDD 131</a></li>
-                    <li><a href="" class="specificcourse">WDD 231</a></li>
-                </ul>
-            </nav>
-        </section>
+    <h2>Web Certificate Courses</h2>
+    <nav id="coursenavigation">
+        <!-- Wrap list items in a <ul> container -->
+        <ul id="filter-buttons" style="list-style: none; padding: 0; display: flex; gap: 1rem;">
+            <li><a href="#" id="all-btn" class="coursemajor">All</a></li>
+            <li><a href="#" id="cse-btn" class="coursemajor">CSE</a></li>
+            <li><a href="#" id="wdd-btn" class="coursemajor">WDD</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Container where JavaScript will dynamically inject the courses -->
+    <div id="course-cards-container"></div>
+</section>
 
     </main>
-
-
-
-
-
-
 
 
     <!-- foooetr -->
     <footer>
         <div class="bodyrows" id="socialmedia">
-            <p>The total credits for the courses listed above is 6</p>
+            <p>The total credits for the courses listed above is <span id="total-credits">0</span></p>
             <ul id="socialmedia-img">
-                <li><a><img src="images/facebook.svg" alt=""></a></li>
-                <li><a><img src="images/linkedin.svg" alt=""></a></li>
-                <li><a><img src="images/github.svg" alt=""></a></li>
-                <li><a><img src="images/x.svg" alt=""></a></li>
+                <li><a href="https://www.facebook.com/your-profile" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://www.linkedin.com/in/freemanmoyo/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/moyofreeman" target="_blank"><img src="images/github.svg" alt="GitHub"></a></li>
+                <li><a href="https://twitter.com/your-profile" target="_blank"><img src="images/x.svg" alt="X"></a></li>
             </ul>
         </div>
         <div id="signature">
-            <p>&copy; <span id="year"></span> Moyo Freeman - GWANDA . Zimbabwe. All rights reserved.</p>
+            &copy; <span id="year"></span> - Moyo Freeman - GWANDA . Zimbabwe. All rights reserved.
             <p id="lastModified"></p>
         </div>
     </footer>

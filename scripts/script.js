@@ -1,3 +1,8 @@
+const navButton = document.querySelector("#nav-button");
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show')
+});
+
 const courses = [
     {
         subject: 'CSE',
@@ -9,7 +14,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +27,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +39,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -77,3 +82,57 @@ const courses = [
         completed: false
     }
 ]
+
+
+
+// Select the container elements
+const container = document.getElementById('course-cards-container');
+const totalCreditsDisplay = document.getElementById('total-credits');
+
+// 2. Function to display courses and calculate credits dynamically
+function displayCourses(courseList) {
+    // Clear the container first
+    container.innerHTML = '';
+
+    // Loop through the array to create cards dynamically
+    courseList.forEach(course => {
+        const card = document.createElement('div');
+        card.classList.add('course-card');
+        
+        // If completed is true, add the 'completed' CSS class
+        if (course.completed === true) {
+            card.classList.add('completed');
+        }
+
+        // Set the text content (e.g., "WDD 130")
+        card.textContent = `${course.subject} ${course.number}`;
+        
+        // Append the card to the page container
+        container.appendChild(card);
+    });
+
+    // 3. Calculate total credits dynamically using reduce() for the current list
+    const totalCredits = courseList.reduce((sum, course) => sum + course.credits, 0);
+    totalCreditsDisplay.textContent = totalCredits;
+}
+
+// 1. Initial Load: Display all courses automatically when page opens
+displayCourses(courses);
+
+// 2. Event Listeners for Filter Buttons (Using .filter())
+document.getElementById('all-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    displayCourses(courses);
+});
+
+document.getElementById('cse-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    const cseCourses = courses.filter(course => course.subject === 'CSE');
+    displayCourses(cseCourses);
+});
+
+document.getElementById('wdd-btn').addEventListener('click', (e) => {
+    e.preventDefault();
+    const wddCourses = courses.filter(course => course.subject === 'WDD');
+    displayCourses(wddCourses);
+});
