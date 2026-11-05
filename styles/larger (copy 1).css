@@ -1,0 +1,29 @@
+@media only screen and (min-width: 38rem) {
+    header, main, footer {  /* Fixed selector: removed nav so max-width applies correctly */
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+
+    header {
+        /* grid-column: 1/3; */
+        width: 100%;
+        display: grid;
+        grid-template-columns: 24px auto; /* just remove the hamburger on wider screens */
+        padding: 5px 0 5px 10px;
+        border-bottom: solid 1px #B08D57;
+        column-gap: 8px;            /* for the space between the logo and site name*/
+        align-items: end;
+        background-color: #173D32;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    #firstrow {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 1.5rem;
+    }
+}

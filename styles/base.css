@@ -1,21 +1,3 @@
-/* :root {
-  --forest-green: #173D32;
-  --earth-brown: #70452F;
-  --warm-ivory: #F4F0E6;
-  --charcoal: #252A27;
-  --antique-gold: #B08D57;
-
-  --primary-color: var(--forest-green);
-  --secondary-color: var(--earth-brown);
-  --background-color: var(--warm-ivory);
-  --text-color: var(--charcoal);
-  --accent-color: var(--antique-gold);
-} */
-
-
-
-
-
 /*==================body======================*/
 body {
     display: flex;
@@ -156,7 +138,7 @@ main {
 .bodycolumntitle {
     text-align: center;
     background-color: #173D32;
-    color: #b8860b;
+    color: #D9B77A;
     display: block;
     flex: 1;
     margin-top: 0;
@@ -189,7 +171,7 @@ p {
 #courses h2 {
     background-color: #173D32;
     margin: 1rem 0 1rem 0;
-    color: #b8860b;
+    color: #D9B77A;
     text-align: center;
     padding: 1rem 0 1rem 0;
     border: 2px solid #b8860b;
@@ -256,12 +238,13 @@ footer {
     width: 100%;
     text-align: center;
     background-color: #173D32;
-    color: #B08D57;
+    color: #D9B77A;
     margin-top: 0;
 }
 
 #socialmedia {
     background-color: #F4F0E6;
+    color: #252A27;
     margin: 0;
 
 }
@@ -269,7 +252,7 @@ footer {
 #signature {
     /* padding-bottom: 1rem; */
     background-color: #173D32;
-    color: #B08D57;
+    color: #D9B77A;
     margin-bottom: 2px;
 }
 
@@ -328,6 +311,6 @@ footer {
 
 .course-card.completed {
     background-color: #173D32; 
-    color: #b8860b; 
+    color: #D9B77A; 
     border-color: #b8860b; 
 }
