@@ -127,10 +127,6 @@ main {
     grid-template-columns: 3fr 1fr;
     column-gap: 1.5rem;
     /* padding: 2rem; */
-
-
-    display: grid;
-    grid-template-columns: 1fr; /* Single column */
     gap: 1.5rem;
 
 }
@@ -190,8 +186,6 @@ p {
     width: 100%;
     padding: 1rem;
     list-style: none;
-    width: 100%;
-    padding: 0;
     margin: 0;
 }
 
