@@ -242,13 +242,6 @@ footer {
     margin-top: 0;
 }
 
-#socialmedia {
-    background-color: #F4F0E6;
-    color: #252A27;
-    margin: 0;
-
-}
-
 #signature {
     /* padding-bottom: 1rem; */
     background-color: #173D32;
@@ -257,6 +250,9 @@ footer {
 }
 
 #socialmedia{
+    background-color: #F4F0E6;
+    color: #252A27;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers everything nicely in the footer */
