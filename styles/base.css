@@ -249,18 +249,18 @@ footer {
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers everything nicely in the footer */
+    align-items: center; 
     padding: 1rem;
 }
 
-/* Target the social icons unordered list directly */
+
 #socialmedia-img {
     display: flex;
-    flex-direction: row;     /* <--- Forces items side by side! */
-    justify-content: center; /* <--- Centers the group horizontally */
+    flex-direction: row;     
+    justify-content: center; 
     align-items: center;
     list-style: none;
-    gap: 1.5rem;             /* Space between each icon */
+    gap: 1.5rem;             
     padding: 0;
     margin: 0.5rem 0 0 0;
     cursor: pointer;
@@ -270,15 +270,12 @@ footer {
     display: block;
 }
 
-#socialmedia-img a {
-    display: block;
-}
-
 #socialmedia-img img {
-    width: 28px;  
+    width: 28px;
     height: 28px;
     display: block;
 }
+
 
 
 #course-cards-container {
@@ -289,7 +286,7 @@ footer {
 }
 
 .course-card {
-    background-color: #70452F; /* Default uncompleted background using earth-brown scheme */
+    background-color: #70452F; 
     color: #F4F0E6;
     border: 2px solid #b8860b;
     border-radius: 8px;

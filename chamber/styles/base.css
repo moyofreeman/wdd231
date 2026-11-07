@@ -1,0 +1,271 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin: 0;
+    background-color: #F4F0E6;
+    color: #252A27;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 44px;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: solid 1px #B08D57;
+    background-color: #173D32;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header img {
+    width: 28px;
+    height: auto;
+    display: block;
+}
+
+header span {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    background-color: #173D32;
+    grid-column: 1 / -1;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #D9B77A;
+    color: #173D32;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ffffff;
+    justify-self: end;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: #F4F0E6;
+    flex: 1;
+}
+
+main h1 {
+    color: #173D32;
+    text-align: center;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-toggle button {
+    background-color: #173D32;
+    color: #D9B77A;
+    border: 2px solid #b8860b;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.view-toggle button.active,
+.view-toggle button:hover {
+    background-color: #70452F;
+    color: #F4F0E6;
+}
+
+/* Directory Cards Grid View */
+.directory-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.directory-cards.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #70452F;
+    color: #F4F0E6;
+    border: 2px solid #b8860b;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #173D32;
+    color: #D9B77A;
+    padding: 1rem;
+    border-bottom: 2px solid #b8860b;
+}
+
+.card-header h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.25rem;
+}
+
+.card-header .tagline {
+    margin: 0;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #F4F0E6;
+}
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-body img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #F4F0E6;
+}
+
+.card-info p {
+    margin: 0.5rem 0;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.card-info a {
+    color: #D9B77A;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #173D32;
+    color: #D9B77A;
+    margin-top: auto;
+    padding: 0 1.5rem 0 0;
+}
+
+.footer-contact {
+    background-color: #173D32;
+    color: #D9B77A;
+    margin-bottom: 1rem;
+}
+
+.footer-contact p {
+    margin: 0.25rem 0;
+    padding: 0;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+.footer-meta {
+    background-color: #173D32;
+    color: #D9B77A;
+    font-size: 0.9rem;
+}
+
+.footer-meta p {
+    margin: 0 0.25rem;
+    padding: 0 1.5rem 0 0;
+}
+
+#socialmedia {
+    color: #252A27;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+#socialmedia-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+    cursor: pointer;
+}
+
+#socialmedia-img li {
+    display: block;
+}
+
+#socialmedia-img img {
+    width: 28px;
+    height: 28px;
+    display: block;
+}
