@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Manama Chamber of Commerce business directory displaying member details, contact information, and websites.">
+    <meta name="author" content="Freeman Moyo">
+
+    <meta property="og:title" content="Manama Chamber of Commerce - Directory">
+    <meta property="og:description"
+        content="Explore local businesses, services, and networking opportunities with the Manama Chamber of Commerce.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://moyofreeman.github.io/wdd231/images/studentphoto.png">
+    <meta property="og:url" content="https://moyofreeman.github.io/wdd231/chamber/directory.html">
+
+    <meta name="twitter:title" content="Manama Chamber of Commerce - Directory">
+    <meta name="twitter:description"
+        content="Explore local businesses, services, and networking opportunities with the Manama Chamber of Commerce.">
+    <meta name="twitter:card" content="summary">
+
+    <title>Manama Chamber of Commerce - Directory</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalise.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- <script src="scripts/directory.js" defer></script> -->
+    <!-- <script src="scripts/getdates.js" defer></script> -->
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.svg" alt="Logo">
+            <span>Manama Chamber of Commerce</span>
+        </div>
+        <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="../images/manamacattle2.webp" alt="Manama Ward 17 cattle sales" class="hero-image">
+        
+            <!-- <div class="hero-content">
+                <h1>Welcome to Manama Chamber of Commerce</h1>
+                <p>We are here to spark.</p>
+                <figure class="hero">
+                    <img src="../images/manamacattle.webp" alt="Cattle grazing at Manama">
+                </figure>
+
+            </div> -->
+        </section>
+        <div id="info-section">
+            <section class="homeinformation" id="calltoaction">
+                <h2>Call to action</h2>
+            </section>
+            <section class="homeinformation" id="currentevents">
+                <h2>Current events</h2>
+            </section>
+
+            <section class="homeinformation" id="weather">
+                <h2>Weather Information</h2>
+                <p>Location: <span id="town"></span></p>
+                <p>Temperature: <span id="current-temp"></span></p>
+                <figure>
+                    <img id="graphic" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+
+            <section class="homeinformation" id="spotlights">
+                <h2>Spotlights</h2>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Manama Chamber of Commerce</strong></p>
+            <p>Manama</p>
+            <p>GWANDA, Zimbabwe</p>
+            <p>sirfmoyo@gmail.com</p>
+            <p>(263) 776172298</p>
+        </div>
+
+        <div class="bodyrows" id="socialmedia">
+            <ul id="socialmedia-img">
+                <li><a href="https://www.facebook.com/your-profile" target="_blank"><img src="../images/facebook.svg"
+                            alt="Facebook"></a></li>
+                <li><a href="https://www.linkedin.com/in/freemanmoyo/" target="_blank"><img src="../images/linkedin.svg"
+                            alt="LinkedIn"></a></li>
+                <li><a href="https://github.com/moyofreeman" target="_blank"><img src="../images/github.svg"
+                            alt="GitHub"></a></li>
+                <li><a href="https://twitter.com/your-profile" target="_blank"><img src="../images/x.svg" alt="X"></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-meta">
+            <p>WDD231 Class Project</p>
+            <p>Freeman Moyo - Manama, Zimbabwe</p>
+            <p>&copy; <span id="year"></span> Manama Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
