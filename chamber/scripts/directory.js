@@ -54,3 +54,18 @@ listButton.addEventListener("click", () => {
 });
 
 getCompaniesData();
+
+
+// information on my modal
+const npDialog = document.getElementById('npDialog');
+const openNp = document.getElementById('npInfo');
+const closeModal = document.getElementById('closeModal');
+
+
+openNp.addEventListener('click', () => {
+  npModal.showModal();
+});
+npModal.showModal();
+closeModal.addEventListener('click', () => {
+    npModal.close();
+});

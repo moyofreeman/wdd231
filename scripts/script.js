@@ -136,3 +136,26 @@ document.getElementById('wdd-btn').addEventListener('click', (e) => {
     const wddCourses = courses.filter(course => course.subject === 'WDD');
     displayCourses(wddCourses);
 });
+
+const modalCourseInformation = document.querySelector("#courseInformation");
+const courseCode = document.querySelector("#courseCode");
+const courseTitle = document.querySelector("#courseTitle");
+const courseCredits = document.querySelector("#courseCredits");
+const courseCertificate = document.querySelector("#courseCertificate");
+const courseDescription = document.querySelector("#courseDescription");
+const closeModal = document.querySelector("#closeModal");
+
+modalCourseInformation.showModal();
+closeModal.addEventListener(
+    'click', () => {
+        modalCourseInformation.close();
+    }
+);
+
+
+document.querySelector(231).addEventListener(
+    'click', (e) => {
+        courseCode.textContent = "umuhle";
+
+    }
+);

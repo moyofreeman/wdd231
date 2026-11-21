@@ -13,3 +13,4 @@ const lastModifiedElement = document.querySelector("#lastModified");
 if (lastModifiedElement) {
     lastModifiedElement.textContent = `Last Modification: ${document.lastModified}`;
 }
+
