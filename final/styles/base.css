@@ -1,0 +1,183 @@
+:root {
+    /* Main School Colours */
+    --primary-color: #800000;
+    /* Maroon – Main school identity */
+    --secondary-color: #FFFFFF;
+    /* White */
+    --accent-gold: #1E5AA8;
+    /* Gold – Highlights and borders */
+    --text-dark: #1F2937;
+    /* Charcoal – Main text */
+    --bg-tint: #F5F5F5;
+    /* Light Grey – Section backgrounds */
+
+    /* Student Uniform Colours */
+    --girls-color: #800000;
+    /* Girls – Maroon */
+    --girls-senior-color: #D4AF37;
+    /* Senior Girls – Blue */
+    --boys-color: #808080;
+    /* Boys – Grey */
+    --boys-senior-color: #111111;
+    /* Senior Boys – Black */
+
+    /* Typography */
+    --font-heading: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Main document */
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+}
+
+/* Headings and titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title,
+.page-title,
+.section-title {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+/* Navigation */
+nav,
+nav a,
+.nav-link,
+.navbar a,
+.menu a {
+    font-family: var(--font-heading);
+}
+
+/* Buttons */
+button,
+.btn,
+.cta-button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+    font-family: var(--font-heading);
+}
+
+/* Paragraphs, descriptions, and form inputs */
+p,
+.description,
+.lead,
+label,
+input,
+textarea,
+select,
+option {
+    font-family: var(--font-body);
+}
+
+/* Header and footer */
+header,
+footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1.5rem;
+}
+
+header {
+    border-bottom: 5px solid var(--accent-gold);
+}
+
+footer {
+    border-top: 5px solid var(--accent-gold);
+}
+
+header h1 {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+/* Paragraphs */
+p {
+    color: var(--text-dark);
+    max-width: 70ch;
+}
+
+/* Highlighted sections and cards */
+.colored-section {
+    background-color: var(--bg-tint);
+    border-left: 5px solid var(--primary-color);
+    padding: 1rem 1.5rem;
+}
+
+.announcement {
+    background-color: var(--bg-tint);
+    border-left: 5px solid var(--accent-gold);
+    padding: 1rem 1.5rem;
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 0.75rem 1.25rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #600000;
+    border-color: #600000;
+}
+
+/* Student category indicators */
+.girls {
+    background-color: var(--girls-color);
+    color: var(--secondary-color);
+}
+
+.girls-senior {
+    background-color: var(--girls-senior-color);
+    color: var(--secondary-color);
+}
+
+.boys {
+    background-color: var(--boys-color);
+    color: var(--secondary-color);
+}
+
+.boys-senior {
+    background-color: var(--boys-senior-color);
+    color: var(--secondary-color);
+}
+
+/* Color swatch table classes */
+.primary {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    border: 1px solid #CBD5E1;
+}
+
+.accent1 {
+    background-color: var(--accent-gold);
+    color: var(--text-dark);
+}
+
+.accent2 {
+    background-color: var(--bg-tint);
+    color: var(--text-dark);
+}
