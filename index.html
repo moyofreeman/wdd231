@@ -7,7 +7,7 @@
     <meta name="description" content="WDD 231 Course landing page demonstrating my web development skills.">
     <meta name="author" content="Freeman Moyo">
 
-    
+
     <meta property="og:title" content="Freeman Moyo">
     <meta property="og:description" content="WDD Web development, personal landing page">
     <meta property="og:locale" content="en_US">
@@ -15,31 +15,31 @@
     <meta property="og:image" content="https://moyofreeman.github.io/wdd231/images/studentphoto.png">
     <meta property="og:url" content="https://moyofreeman.github.io/wdd231/index.html">
 
-    
+
     <meta name="twitter:title" content="WDD Web development, personal landing page & Assignments">
     <meta name="twitter:description" content="Lessons for BYU software development course.">
     <meta name="twitter:card" content="summary">
 
     <title>Freeman Moyo | WDD 231 - Web Frontend Development I</title>
 
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
-    
+
     <link rel="stylesheet" href="styles/normalise.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    
+
     <link rel="icon" href="favicon.ico">
 
-    
+
     <script src="scripts/script.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 </head>
@@ -48,14 +48,14 @@
     <!-- header -->
     <header>
         <!-- <div id="sitename"> -->
-        <img src="images/logo.svg" alt="site logo"  width="24" height="24">
+        <img src="images/logo.svg" alt="site logo" width="24" height="24">
         <span id="sitename">Freeman Moyo</span>
         <!-- </div> -->
-        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>  
-        
-              
-        
-        <!-- id for javascript and class for css --> 
+        <button id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+
+
+
+        <!-- id for javascript and class for css -->
         <nav id="navigationbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -65,7 +65,7 @@
         </nav>
     </header>
 
-    
+
     <!-- body -->
     <!-- the body to have 5 main rows, then row 4 to be split into 2 -->
     <!-- also tow have 2 columns -->
@@ -93,33 +93,34 @@
             </section>
             <section class="bodycolumns" id="rightcolumn">
                 <h2 class="bodycolumntitle">Student Photo</h2>
-                <img id="studentphoto" src="images/studentphoto.png" alt="Portrait of Freeman Moyo, a BYU software development student.">
+                <img id="studentphoto" src="images/studentphoto.png"
+                    alt="Portrait of Freeman Moyo, a BYU software development student.">
             </section>
         </div>
 
         <section class="bodyrows" id="courses">
-    <h2>Web Certificate Courses</h2>
-    <nav id="coursenavigation">
-        <!-- Wrap list items in a <ul> container -->
-        <ul id="filter-buttons"> 
-            <li><a href="#" id="all-btn" class="coursemajor">All</a></li>
-            <li><a href="#" id="cse-btn" class="coursemajor">CSE</a></li>
-            <li><a href="#" id="wdd-btn" class="coursemajor">WDD</a></li>
-        </ul>
-    </nav>
-    
-    <!-- Container where JavaScript will dynamically inject the courses -->
-    <div id="course-cards-container"></div>
-</section>
+            <h2>Web Certificate Courses</h2>
+            <nav id="coursenavigation">
+                <!-- Wrap list items in a <ul> container -->
+                <ul id="filter-buttons">
+                    <li><a href="#" id="all-btn" class="coursemajor">All</a></li>
+                    <li><a href="#" id="cse-btn" class="coursemajor">CSE</a></li>
+                    <li><a href="#" id="wdd-btn" class="coursemajor">WDD</a></li>
+                </ul>
+            </nav>
 
-<dialog id="courseInformation">
-    <h3 id="courseCode"></h3>
-    <h3 id="courseTitle"></h3>
-    <p id="courseCredits"></p>
-    <p id="courseCertificate"></p>
-    <p id="courseDescription"></p>
-    <button id="closeModal">close</button>
-</dialog>
+            <!-- Container where JavaScript will dynamically inject the courses -->
+            <div id="course-cards-container"></div>
+        </section>
+
+        <dialog id="courseInformation">
+            <h3 id="courseCode"></h3>
+            <h3 id="courseTitle"></h3>
+            <p id="courseCredits"></p>
+            <p id="courseCertificate"></p>
+            <p id="courseDescription"></p>
+            <button id="closeModal">close</button>
+        </dialog>
 
     </main>
 
@@ -129,10 +130,27 @@
         <div class="bodyrows" id="socialmedia">
             <p>The total credits for the courses listed above is <span id="total-credits">0</span></p>
             <ul id="socialmedia-img">
-                <li><a href="https://www.facebook.com/profile.php?id=61588118786829" target="_blank"><img src="images/facebook.svg" alt="Facebook">An icon for Facebook</a></li>
-                <li><a href="https://www.linkedin.com/in/freemanmoyo/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn">An icon forLinkedIn</a></li>
-                <li><a href="https://github.com/moyofreeman" target="_blank"><img src="images/github.svg" alt="GitHub">An icon forGithub</a></li>
-                <li><a href="https://x.com/mzalwaneSML" target="_blank"><img src="images/twitter.svg" alt="Twitter">An icon forTwitter</a></li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=61588118786829" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="images/facebook.svg" alt="" width="28" height="28">Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/freemanmoyo/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/linkedin.svg" alt="" width="28" height="28">LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/moyofreeman" target="_blank" rel="noopener noreferrer">
+                        <img src="images/github.svg" alt="" width="28" height="28">GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://x.com/mzalwaneSML" target="_blank" rel="noopener noreferrer">
+                        <img src="images/twitter.svg" alt="" width="28" height="28">Twitter
+                    </a>
+                </li>
             </ul>
         </div>
         <div id="signature">
