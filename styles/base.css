@@ -311,6 +311,13 @@ footer {
     border-color: #59636E;
 }
 
+#filter-buttons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
 /* ========================= DIALOG====================== */
 dialog {
     width: min(90%, 400px);
