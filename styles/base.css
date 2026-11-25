@@ -26,12 +26,12 @@ header {
     /* 24px for the site logo
        auto for the site name
        44px for the hamburger icon coz that is the minimum size for touch devices */
-    padding: 0.5rem 0.5rem 0.5rem 10px;
+    /* padding: 1.5rem 0.5rem 0.5rem 0.5rem; */
     border-bottom: solid 1px #59636E;
     column-gap: 8px;
     /* for the space between the logo and site name */
     align-items: end;
-    background-color: #101820;
+    background-color: #E8EDF2;
 }
 
 header img {
@@ -42,46 +42,61 @@ header img {
     /* so it scales nicely */
     display: block;
     /* by default images are in-line, so we must display them as block */
-    padding-bottom: 1px;
+   
+    background-color: #E8EDF2;
+    
 }
 
 header span {
     font-size: 1.2rem;
-    color: #FFFFFF;
+    /* color: black; */
+    /* background-color: #E8EDF2; */
+    
+    
 }
 
-/* #navigationbar {
+ #navigationbar {
     width: 100%;
+    /* max-width: 900px; */
     background-color: #222222;
-    margin: 0 1rem 0 1rem;
+    grid-column: 1/ -1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #navigationbar ul {
-    display: flex;
+    
+    /* border: solid 1px red; */
     list-style: none;
     width: 100%;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    align-items: flex-start;
+    
 }
 
 #navigationbar a {
     color: #ffffff;
     padding: 1rem;
-    display: block;
-    flex: 1;
+    /*display: block;*/
+    /* flex: 1; */
     text-decoration: none;
-    width: 100%;
+    /* width: 100%; */
 }
 
 #navigationbar a:hover {
-    flex: 1;
+    /* flex: 1; */
     text-align: center;
     background-color: #d9d9d9;
     color: #000000;
+    text-decoration-line: underline;
 }
 
-#navigationbar li {
+/* #navigationbar li {
     flex: 1;
     text-align: center;
-} */
+}  */
 
 .hamburger {
     background: none;
@@ -105,7 +120,7 @@ header span {
 main {
     display: grid;
     grid-template-rows: 1fr auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     margin-bottom: 0;
     background-color: #FFFFFF;
 }
@@ -298,7 +313,7 @@ footer {
 
 /* ========================= DIALOG====================== */
 dialog {
-    width: min(90, 400px);
+    width: min(90%, 400px);
     background-color: azure;
     border: solid #17212B 2px;
     border-radius: 3px;
