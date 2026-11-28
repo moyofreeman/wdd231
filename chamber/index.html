@@ -5,52 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Manama Chamber of Commerce business directory displaying member details, contact information, and websites.">
+        content="Manama Chamber of Commerce home page: local business news, weather, events and member spotlights for Manama, Gwanda, Zimbabwe.">
     <meta name="author" content="Freeman Moyo">
 
-    <meta property="og:title" content="Manama Chamber of Commerce - Directory">
+    <meta property="og:title" content="Manama Chamber of Commerce - Home">
     <meta property="og:description"
         content="Explore local businesses, services, and networking opportunities with the Manama Chamber of Commerce.">
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <!-- <meta property="og:image" content="https://moyofreeman.github.io/wdd231/images/studentphoto.png"> -->
     <meta property="og:image" content="https://moyofreeman.github.io/wdd231/chamber/images/manamacattle2.webp">
-    <meta property="og:url" content="https://moyofreeman.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://moyofreeman.github.io/wdd231/chamber/index.html">
 
-    <meta name="twitter:title" content="Manama Chamber of Commerce - Directory">
+    <meta name="twitter:title" content="Manama Chamber of Commerce - Home">
     <meta name="twitter:description"
         content="Explore local businesses, services, and networking opportunities with the Manama Chamber of Commerce.">
     <meta name="twitter:card" content="summary">
 
-    <title>Manama Chamber of Commerce - Directory</title>
+    <title>Manama Chamber of Commerce - Home</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalise.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/directory.js" defer></script>
-    <!-- <script src="scripts/getdates.js" defer></script> -->
+    <script src="scripts/common.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
 
     <header>
         <div class="logo-container">
-            <img src="images/logo.svg" alt="Freeman Moyo Logo">
+            <img src="images/logo.svg" alt="Manama Chamber of Commerce logo">
             <span>Manama Chamber of Commerce</span>
         </div>
-        <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+        <button id="menu-btn" class="hamburger" type="button" aria-label="Toggle Navigation" aria-expanded="false"
+            aria-controls="nav-links"></button>
         <nav>
             <ul id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="discover.html">Discover</a></li>
             </ul>
@@ -58,34 +57,37 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Welcome to Manama Chamber of Commerce</h1>
-            <img src="images/manamacattle2.webp" alt="Manama Ward 17 cattle sales" class="hero-image">
+        <h1>Welcome to Manama Chamber of Commerce</h1>
 
+        <section class="hero">
+            <img src="images/manamacattle2.webp" alt="Cattle sale at Manama, Ward 17" fetchpriority="high">
+            <a href="join.html" class="cta">Join the Chamber Today</a>
         </section>
+
         <div id="info-section">
-            <section class="homeinformation" id="calltoaction">
-                <h2>Call to action</h2>
-            </section>
-            <section class="homeinformation" id="currentevents">
-                <h2>Current events</h2>
+            <section class="homeinformation" id="current-events">
+                <h2>Current Events</h2>
+                <ul class="events">
+                    <li><strong>Sat 12 Dec 2026</strong><br>Ward 17 Cattle Auction</li>
+                    <li><strong>Wed 16 Dec 2026</strong><br>Chamber Networking Breakfast</li>
+                    <li><strong>Fri 8 Jan 2027</strong><br>Small Business Record-Keeping Workshop</li>
+                </ul>
             </section>
 
             <section class="homeinformation" id="weather">
                 <h2>Weather Information</h2>
-                <p>Location: <span id="town"></span></p>
-                <p>Temperature: <span id="current-temp"></span></p>
-                <figure>
-                    <img id="graphic" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+                <p>Location: <span id="town">Manama, Gwanda</span></p>
+                <p id="weather-status">Loading weather...</p>
+                <div id="current-weather"></div>
+                <h3>3-Day Forecast</h3>
+                <ul id="forecast" class="forecast"></ul>
             </section>
 
             <section class="homeinformation" id="spotlights">
                 <h2>Spotlights</h2>
+                <div class="spotlight-cards" id="spotlight-cards"></div>
             </section>
         </div>
-        
     </main>
 
     <footer>
@@ -96,19 +98,18 @@
             <p>sirfmoyo@gmail.com</p>
             <p>(263) 776172298</p>
         </div>
-    
+
         <div class="footer-social">
             <a href="https://www.facebook.com/your-real-page" target="_blank" rel="noopener noreferrer"
                 aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
             <a href="https://www.linkedin.com/in/freemanmoyo/" target="_blank" rel="noopener noreferrer"
                 aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
-            <a href="https://github.com/moyofreeman" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img
-                    src="images/github.svg" alt=""></a>
-            <a href="https://twitter.com/your-real-page" target="_blank" rel="noopener noreferrer" aria-label="X"><img
-                    src="images/twitter.svg" alt=""></a>
+            <a href="https://github.com/moyofreeman" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub"><img src="images/github.svg" alt=""></a>
+            <a href="https://twitter.com/your-real-page" target="_blank" rel="noopener noreferrer"
+                aria-label="X"><img src="images/twitter.svg" alt=""></a>
         </div>
-    
-    
+
         <div class="footer-meta">
             <p>WDD231 Class Project</p>
             <p>Freeman Moyo - Manama, Zimbabwe</p>
