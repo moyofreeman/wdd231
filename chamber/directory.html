@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/directory.js" defer></script>
-    <!-- <script src="scripts/getdates.js" defer></script> -->
+    
 </head>
 
 <body>
@@ -44,7 +44,8 @@
             <img src="../images/logo.svg" alt="Logo">
             <span>Manama Chamber of Commerce</span>
         </div>
-        <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+        <!-- <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation"></button> -->
+        <button id="menu-btn" class="hamburger" aria-label="Toggle Navigation" aria-expanded="false"aria-controls="nav-links"></button>
         <nav>
             <ul id="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -63,142 +64,8 @@
             <button id="list-view">List</button>
         </div>
 
-        <div class="directory-cards grid">
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="card">
-                <div class="card-header">
-                    <h2>Business Name</h2>
-                    <p class="tagline">Business Tag Line</p>
-                </div>
-                <div class="card-body">
-                    <img src="images/placeholder.svg" alt="Placeholder">
-                    <div class="card-info">
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> <a href="#">mybusiness.com</a></p>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <div class="directory-cards grid"></div>
+        
     </main>
 
     <footer>
@@ -210,7 +77,14 @@
             <p>(263) 776172298</p>
         </div>
 
-        <div class="bodyrows" id="socialmedia">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/your-real-page" target="_blank" rel="noopener noreferrer"aria-label="Facebook"><img src="images/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/freemanmoyo/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="images/linkedin.svg" alt=""></a>
+            <a href="https://github.com/moyofreeman" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="images/github.svg" alt=""></a>
+            <a href="https://twitter.com/your-real-page" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="images/twitter.svg" alt=""></a>
+        </div>
+
+        <!-- <div class="bodyrows" id="socialmedia">
             <ul id="socialmedia-img">
                 <li><a href="https://www.facebook.com/your-profile" target="_blank"><img src="images/facebook.svg"
                             alt="Facebook"></a>Facebook</li>
@@ -219,7 +93,7 @@
                 <li><a href="https://github.com/moyofreeman" target="_blank"><img src="images/github.svg" alt="GitHub"></a>Github</li>
                 <li><a href="https://twitter.com/your-profile" target="_blank"><img src="images/twitter.svg" alt="X"></a>Twitter</li>
             </ul>
-        </div>
+        </div> -->
 
         <div class="footer-meta">
             <p>WDD231 Class Project</p>

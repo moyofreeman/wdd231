@@ -5,7 +5,7 @@
       "address": "12 Main Street, Manama, Zimbabwe",
       "phone": "+263 77 123 4567",
       "website": "https://www.manamaagro.co.zw",
-      "image": "agro.jpg",
+      "image": "agro.webp",
       "membershipLevel": 3,
       "category": "Agriculture"
     },
@@ -14,7 +14,7 @@
       "address": "45 Station Road, Manama, Zimbabwe",
       "phone": "+263 71 987 6543",
       "website": "https://www.limpopobuilders.co.zw",
-      "image": "hardware.jpg",
+      "image": "hardware.webp",
       "membershipLevel": 2,
       "category": "Construction"
     },
@@ -23,7 +23,7 @@
       "address": "8 Commercial Avenue, Manama, Zimbabwe",
       "phone": "+263 73 456 7890",
       "website": "https://www.matabelelandtech.co.zw",
-      "image": "tech.jpg",
+      "image": "tech.webp",
       "membershipLevel": 3,
       "category": "Information Technology"
     },
@@ -32,7 +32,7 @@
       "address": "3 Community Centre, Manama, Zimbabwe",
       "phone": "+263 77 333 2211",
       "website": "https://www.manamavalleypharmacy.co.zw",
-      "image": "pharmacy.jpg",
+      "image": "pharmacy.webp",
       "membershipLevel": 1,
       "category": "Healthcare"
     },
@@ -41,7 +41,7 @@
       "address": "9 Transport Park, Manama, Zimbabwe",
       "phone": "+263 71 555 4433",
       "website": "https://www.zambezilogistics.co.zw",
-      "image": "transport.jpg",
+      "image": "transport.webp",
       "membershipLevel": 2,
       "category": "Logistics"
     },
@@ -50,7 +50,7 @@
       "address": "1 Market Square, Manama, Zimbabwe",
       "phone": "+263 77 888 9900",
       "website": "https://www.savemoresupermarket.co.zw",
-      "image": "supermarket.jpg",
+      "image": "supermarket.webp",
       "membershipLevel": 1,
       "category": "Retail"
     },
@@ -59,7 +59,7 @@
       "address": "22 Heritage Lane, Manama, Zimbabwe",
       "phone": "+263 73 111 2233",
       "website": "https://www.baobabcrafts.co.zw",
-      "image": "crafts.jpg",
+      "image": "crafts.webp",
       "membershipLevel": 1,
       "category": "Arts & Crafts"
     }

@@ -99,7 +99,7 @@ nav a.active {
 
 main {
     display: grid;
-    grid-template-rows: 1fr auto;
+    /* grid-template-rows: 1fr auto; */
     padding: 1.5rem;
     background-color: #FFFFFF;
     flex: 1;
@@ -178,7 +178,35 @@ main h1 {
     color: #FFFFFF;
 }
 
+
 .card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.card-body img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.card-info {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.card-info p {
+    margin: 0.25rem 0;
+}
+
+/* .card-body {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -192,7 +220,7 @@ main h1 {
     object-fit: cover;
     border-radius: 4px;
     background-color: #FFFFFF;
-}
+} */
 
 .card-info a {
     color: #005FCC;
@@ -203,6 +231,48 @@ main h1 {
 .card-info a:focus {
     color: #101820;
 }
+
+
+/* DISOCVER CSS */
+
+.discover-card div {
+    background-color: #E8EDF2;
+    color: #17212B;
+    border: 2px solid #59636E;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+
+    grid-template-areas: 
+    "name"
+    "photo"
+    "address"
+    "description";
+}
+
+.discover-card h2 {
+    grid-area: name;
+}
+
+.discover-card img {
+   
+    /* width: 100%; */
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    grid-area: description;
+}
+
+.discover-card .address {
+
+    /* width: 100%; */
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    grid-area: photo;
+}
+
+
 
 /* Footer */
 footer {
@@ -249,7 +319,37 @@ footer {
     padding: 0;
 }
 
-#socialmedia {
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-social img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+/* #socialmedia {
     color: #17212B;
     margin: 0;
     display: flex;
@@ -269,7 +369,7 @@ footer {
     padding: 0;
     margin: 0.5rem 0 0 0;
     cursor: pointer;
-}
+} */
 
 #socialmedia-img li {
     display: block;
