@@ -318,36 +318,87 @@ main .homeinformation {
 }
 
 /* Discover page */
-.discover-card div {
+.visit-message {
+    margin: 0 0 1.5rem 0;
+    padding: 0.75rem 1rem;
+    background-color: #E8EDF2;
+    border: 1px solid #005FCC;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.discover-container {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
     background-color: #E8EDF2;
     color: #17212B;
     border: 2px solid #59636E;
     border-radius: 8px;
-    overflow: hidden;
     text-align: center;
-    grid-template-areas:
-        "name"
-        "photo"
-        "address"
-        "description";
 }
 
 .discover-card h2 {
-    grid-area: name;
+    margin: 0;
+    font-size: 1.25rem;
+    color: #101820;
+}
+
+.discover-card figure {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .discover-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    grid-area: description;
 }
 
-.discover-card .address {
-    object-fit: cover;
+.discover-card address {
+    font-style: normal;
+}
+
+.discover-card p {
+    margin: 0;
+}
+
+.discover-card button {
+    margin-top: auto;
+    align-self: center;
+    padding: 0.5rem 1.5rem;
+    background-color: #005FCC;
+    color: #FFFFFF;
+    border: 2px solid #005FCC;
     border-radius: 4px;
-    background-color: #FFFFFF;
-    grid-area: photo;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: #101820;
+    border-color: #101820;
 }
 
 /* Footer */

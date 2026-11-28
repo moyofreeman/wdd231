@@ -27,13 +27,13 @@ export const places = [
     "id": 4,
     "name": "Manama High School",
     "address": "Manama High School, Gwanda, Zimbabwe",
-    "description": "Manama High School, which has some produced some great minds, such as Freeman Moyo.",
+    "description": "Manama High School has produced some great minds, such as Freeman Moyo.",
     "image": "images/discover5.webp",
     "alt": "Manama High School"
   },
   {
     "id": 5,
-    "name": "Tuli exortic camp",
+    "name": "Tuli Exotic Camp",
     "address": "Tuli Rest Camp, Gwanda, Zimbabwe",
     "description": "A nice retreat camp down the Tuli river, good for families, couples, and business conferences.",
     "image": "images/discover6.webp",
@@ -43,7 +43,7 @@ export const places = [
     "id": 6,
     "name": "Phalatswe Mountain",
     "address": "Phalatswe Tuli Resort, Gwanda, Zimbabwe",
-    "description": "Nice Mountain which is submerged in Tuli river, nice for retreats, with accomodation.",
+    "description": "Nice Mountain which is submerged in Tuli river, nice for retreats, with accommodation.",
     "image": "images/discover7.webp",
     "alt": "Phalatswe Mountain"
   },
@@ -54,6 +54,13 @@ export const places = [
     "description": "One of the main leisure activities is to watch the soccer featuring twelve teams from Ward 17.",
     "image": "images/discover8.webp",
     "alt": "Manama Soccer grounds"
+  },
+  {
+    "id": 8,
+    "name": "Ward 17 Cattle Sales",
+    "address": "Manama Center, Gwanda, Zimbabwe",
+    "description": "Farmers from Ward 17 bring their cattle here to sell, which makes it a key part of the local economy.",
+    "image": "images/discover3.webp",
+    "alt": "Cattle at the Manama Ward 17 cattle sales"
   }
 ];
- 
